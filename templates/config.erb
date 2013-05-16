@@ -19,26 +19,26 @@
 
 # proxyAddress = "::0"        # both IPv4 and IPv6
 # proxyAddress = "0.0.0.0"    # IPv4 only
-proxyAddress = "<%= scope.lookupvar('polipo::params::proxyaddress') -%>"
+proxyAddress = "<%= scope.lookupvar('polipo::proxyaddress') -%>"
 
 # If you are enabling 'proxyAddress' above, then you want to enable the
 # 'allowedClients' variable to the address of your network, e.g.
 # allowedClients = 127.0.0.1, 192.168.42.0/24
                                             
 # allowedClients = 127.0.0.1              
-allowedClients = "<%= scope.lookupvar('polipo::params::allowedclients') -%>"
+allowedClients = <%= scope.lookupvar('polipo::allowedclients') -%>
 
 # Uncomment this if you want your Polipo to identify itself by
 # something else than the host name:
 
 # proxyName = "polipo.example.org"
-proxyName = <%= scope.lookupvar('polipo::params::proxyname') -%>
+proxyName = <%= scope.lookupvar('polipo::proxyname') -%>
 
 
 # Uncomment this if there's only one user using this instance of Polipo:
 
 # cacheIsShared = false
-cacheIsShared = <%= scope.lookupvar('polipo::params::sharedcache') -%>
+cacheIsShared = <%= scope.lookupvar('polipo::sharedcache') -%>
 
 
 # Uncomment this if you want to use a parent proxy:
