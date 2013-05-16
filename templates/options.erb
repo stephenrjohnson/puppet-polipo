@@ -2,8 +2,6 @@
 # File managed by Puppet
 #
 
-# See the /usr/share/doc/polipo/README.Debian file for details on this file
-
 #method any
 #method static
 #method manual
@@ -12,4 +10,4 @@
 #method ppp
 #method wvdial
 
-method <%= scope.lookupvar('polipo::method') -%>
+method <%= scope.lookupvar('polipo::method') %>
