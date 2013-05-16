@@ -1,0 +1,7 @@
+<% if @forbiden.is_a?(Array) -%>
+<% @forbiden.each do |k| -%>
+<%= k %>
+<% end -%>
+<% else -%>
+<%= @forbiden %>
+<% end -%>
