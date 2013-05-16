@@ -1,3 +1,6 @@
+## Requirements
+  On a Redhat machine you need to have Epel setup. 
+
 ## Sample usage
 
 	node host01 {
@@ -13,6 +16,3 @@
 	allowedclients => '127.0.0.1',  # default: any   | any static manual dhcp bootp ppp wvdial
 	proxyname      => 'foobar',     # default: $hostname
 	sharedcache    => 'false'
-
-When a file called forbidden-$fqdn is present it will
-be used to override the default forbidden list.

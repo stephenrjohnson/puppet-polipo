@@ -10,6 +10,8 @@
 # This file only contains some of the configuration variables; see the
 # list given by ``polipo -v'' and the manual for more.
 
+daemonise = true
+pidFile = <%= scope.lookupvar('polipo::params::ppolipo_pidfile') %>
 
 ### Basic configuration
 ### *******************
