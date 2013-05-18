@@ -16,4 +16,4 @@
 	allowedclients => '127.0.0.1',  # default: any   | any static manual dhcp bootp ppp wvdial
 	proxyname      => 'foobar',     # default: $hostname
 	sharedcache    => 'false'
-  forbiden       => []
+ 	forbiden       => []
